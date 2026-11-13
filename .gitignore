@@ -1,0 +1,13 @@
+# Local recordings are not distributed with the source project.
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.flac
+node_modules/
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
