@@ -7,10 +7,10 @@ A Spotify-inspired music player built with HTML, CSS and vanilla JavaScript. An 
 Requires Python 3 and a browser. From this repository's root:
 
 ```sh
-python -m http.server 4173 --bind 127.0.0.1
+python server.py
 ```
 
-Open **http://127.0.0.1:4173/**. Use an HTTP server with directory listings; opening `index.html` as a file or hosting it on GitHub Pages will not provide the directory index the player uses to discover audio files.
+Open **http://127.0.0.1:4173/**. The included server provides directory listings for album discovery and byte-range responses for audio seeking. Opening `index.html` as a file or hosting it on GitHub Pages will not provide those features. Use `python server.py --port 4174` to choose a different port.
 
 No npm packages, Spotify credentials or external music service are required.
 
